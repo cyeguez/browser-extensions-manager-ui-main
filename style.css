@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme{
+--color-Neutral-90: `hsl(227, 75%, 14%)`
+--color-Neutral-80: `hsl(226, 25%, 17%)`
+--color-Neutral-70: `hsl(225, 23%, 24%)`
+--color-Neutral-60: `hsl(226, 11%, 37%)`
+--color-Neutral-30: `hsl(0, 0%, 78%)`
+--color-Neutral-20: `hsl(217, 61%, 90%)`
+--color-Neutral-10: `hsl(0, 0%, 93%)`
+--color-Neutral-: `hsl(200, 60%, 99%)`
+
+/* ### Red */
+
+--color-Red-400: `hsl(3, 86%, 64%)`
+--color-Red-500: `hsl(3, 71%, 56%)`
+--color-Red-700: `hsl(3, 77%, 44%)`
+
+/* ### Gradient */
+
+--Light Gradient: `linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%)`
+--Dark Gr-dient: `linear-gradient(180deg, #040918 0%, #091540 100%)`
+
+}
