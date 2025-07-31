@@ -24,14 +24,18 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="browser">
+  <body class="bg-Neutral-90 text-Neutral-900 font-sans 2xl:border"> ">
+    <div class="browser  px-2.5 py-2.5 max-w-[1174px] mx-auto rounded-md">
       <header>
-        <article class="header-container">
-          <div> 
-            <img src="./assets/images/logo.svg" alt="Logo">
-            <img src="./assets/images/icon-sun.svg" alt="Sun">
+        <article class="header-container bg-Neutral-80 rounded-md p-2">
+          <div class="flex items-center justify-between">
+            <img  src="./assets/images/logo.svg" alt="Logo" />
+            <div class=" bg-Neutral-70 rounded-md flex items-center justify-center w-9 h-9 text-Neutral-0"  >
+              <img src="./assets/images/icon-sun.svg" alt="Sun" />
+              <img class="hidden" src="./assets/images/icon-moon.svg" alt="Sun" />
+            </div>
           </div>
         </article>
       </header>
@@ -40,30 +44,55 @@
           <div>
             <h1>Extensions List</h1>
             <div>
-              <button type="button" class="filter-btn px-4 py-2 rounded-md bg-blue-500 text-white mr-2 active"> All</button>
-              <button type="button" class="filter-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800 mr-2"> Active</button>
-              <button type="button" class="filter-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800">Inactive</button>
+              <button
+                type="button"
+                class="filter-btn px-4 py-2 rounded-md bg-blue-500 text-white mr-2 active"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                class="filter-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800 mr-2"
+              >
+                Active
+              </button>
+              <button
+                type="button"
+                class="filter-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800"
+              >
+                Inactive
+              </button>
             </div>
           </div>
           <section>
             <article>
               <div>
-                <img src="./assets/images/icon-devlens.svg" alt="Develens">
+                <img src="./assets/images/logo-devlens.svg" alt="Develens" />
                 <div>
                   <h2>DevLens</h2>
-                  <p>Quickly inspect page layouts and visualize element boundaries.</p>
+                  <p>
+                    Quickly inspect page layouts and visualize element
+                    boundaries.
+                  </p>
                 </div>
                 <div>
-                  <button type="button" class="px-4 py-2 rounded-md bg-blue-500 text-white">Remove</button>
-                  <button type="button" class="px-4 py-2 rounded-md bg-gray-200 text-gray-800">Disable</button>
+                  <button
+                    type="button"
+                    class="px-4 py-2 rounded-md bg-blue-500 text-white"
+                  >
+                    Remove
+                  </button>
+                  <button
+                    type="button"
+                    class="px-4 py-2 rounded-md bg-gray-200 text-gray-800"
+                  >
+                    Disable
+                  </button>
                 </div>
               </div>
             </article>
           </section>
-
         </div>
-
-
       </main>
 
       <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
