@@ -26,16 +26,31 @@
     </style>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-Neutral-90 text-Neutral-900 font-sans 2xl:border"> ">
-    <div class="browser  px-2.5 py-2.5 max-w-[1174px] mx-auto rounded-md">
+  <body class=" dark:bg-Neutral-90 dark:text-Neutral-0 bg-Neutral-20 text-Neutral-90 font-sans 2xl:border">
+    
+    <div class="browser px-2.5 py-2.5 max-w-[1174px] mx-auto rounded-md">
       <header>
-        <article class="header-container bg-Neutral-80 rounded-md p-2">
+        <article
+          class="header-container dark:bg-Neutral-80 dark:text-Neutral-0 bg-Neutral-0  text-Neutral-90 rounded-md p-2 flex items-center justify-between"
+        >
+          <svg width="179" height="41">
+            <use xlink:href="./assets/images/sprite.svg#logoIcon"></use>
+          </svg>
           <div class="flex items-center justify-between">
-            <img  src="./assets/images/logo.svg" alt="Logo" />
-            <div class=" bg-Neutral-70 rounded-md flex items-center justify-center w-9 h-9 text-Neutral-0"  >
-              <img src="./assets/images/icon-sun.svg" alt="Sun" />
-              <img class="hidden" src="./assets/images/icon-moon.svg" alt="Sun" />
-            </div>
+            <button class="bg-Neutral-70 rounded-md p-2 dark:inline-block hidden " id="btnLight">
+              <div>
+                <svg width="22" height="22">
+                  <use xlink:href="/assets/images/sprite.svg#sunIcon"></use>
+                </svg>
+              </div>
+            </button>
+            <button class="bg-Neutral-20 rounded-md p-2 dark:hidden"  id="btnDark">
+              <div>
+                <svg width="22" height="22">
+                  <use xlink:href="./assets/images/sprite.svg#moonIcon"></use>
+                </svg>
+              </div>
+            </button>
           </div>
         </article>
       </header>
@@ -118,5 +133,8 @@
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </div>
+
+
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

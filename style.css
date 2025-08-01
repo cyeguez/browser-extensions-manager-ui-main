@@ -17,7 +17,7 @@
   font-display: swap;
 }
 
-@theme {
+:root {
   --color-Neutral-90: hsl(227, 75%, 14%);
   --color-Neutral-80: hsl(226, 25%, 17%);
   --color-Neutral-70: hsl(225, 23%, 24%);
@@ -38,7 +38,4 @@
   --font-serif: "Nonoto Sans italic", serif;
 
   /* Breackpoint */
-
-  --breakpoint-2xl:90rem;
-  --size-desktop: 1174px;
 }
