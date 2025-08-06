@@ -1,0 +1,56 @@
+@import "../base/_variables.css";
+header {
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: .625rem;
+  }
+
+  .header__container .logo {
+    width: 179px;
+    height: 41px;
+    
+  }
+
+  .header__theme-toggle {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__theme-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+
+  .header__theme-button:hover {
+    opacity: 0.8;
+  }
+
+  .header__theme-button--light {
+    background-color: var(--color-button-bg);
+  }
+
+  .header__theme-button--dark {
+    background-color: var(--color-button-bg);
+  }
+
+  .header__theme-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+}

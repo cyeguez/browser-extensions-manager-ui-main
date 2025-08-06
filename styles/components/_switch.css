@@ -1,0 +1,98 @@
+@import "../base/_variables.css";
+
+/* Switch Toggle Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 19px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-switch-bg);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+  background-color: var(--color-Red-500);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-Red-500);
+}
+
+input:checked + .slider:before {
+  transform: translateX(17px);
+}
+
+/* Dark theme adjustments */
+.dark .slider {
+  background-color: var(--color-switch-bg);
+}
+
+.dark .slider:before {
+  background-color: var(--color-Neutral-0);
+}
+
+.dark input:checked + .slider {
+  background-color: var(--color-Red-400);
+}
+
+.dark input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-Red-400);
+}
+
+/* Hover effects */
+.switch:hover .slider {
+  opacity: 0.8;
+}
+
+/* Active state */
+.switch:active .slider:before {
+  width: 17px;
+}
+
+
+
+/* Alternative smaller size for compact layouts */
+.switch--small {
+  width: 44px;
+  height: 24px;
+}
+
+.switch--small .slider:before {
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+}
+
+.switch--small input:checked + .slider:before {
+  transform: translateX(20px);
+}

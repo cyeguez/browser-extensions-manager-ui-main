@@ -1,41 +1,27 @@
-@import "tailwindcss";
+/* Importing base styles */
+@import url("./styles/base/_reset.css");
+@import url("./styles/base/_variables.css");
+@import url("/styles/base/_typography.css");
 
-@font-face {
-  font-family: "Nonoto Sans";
-  src: url("assets/fonts/NotoSans-VariableFont_wdth\,wght.woff2")
-    format("woff2");
-  font-style: normal;
-  font-weight: 200 900;
-  font-display: swap;
+/* Importing layout styles */
+@import url("./styles/layout/_app-container.css");
+@import url("./styles/layout/_header.css");
+@import url("./styles/layout/_footer.css");
+@import url("./styles/layout/_main.css");
+
+/* Importing component styles */
+@import url("./styles/components/_switch.css");
+
+/* Global Theme Styles */
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-@font-face {
-  font-family: "Nonoto Sans italic";
-  src: url("assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.woff2")
-    format("woff2");
-  font-style: normal;
-  font-weight: 200 900;
-  font-display: swap;
-}
 
-:root {
-  --color-Neutral-90: hsl(227, 75%, 14%);
-  --color-Neutral-80: hsl(226, 25%, 17%);
-  --color-Neutral-70: hsl(225, 23%, 24%);
-  --color-Neutral-60: hsl(226, 11%, 37%);
-  --color-Neutral-30: hsl(0, 0%, 78%);
-  --color-Neutral-20: hsl(217, 61%, 90%);
-  --color-Neutral-10: hsl(0, 0%, 93%);
-  --color-Neutral-0: hsl(200, 60%, 99%);
-
-  /* ### Red */
-
-  --color-Red-400: hsl(3, 86%, 64%);
-  --color-Red-500: hsl(3, 71%, 56%);
-  --color-Red-700: hsl(3, 77%, 44%);
-
-  /* Fonts */
-  --font-sans: "Nonoto Sans", sans-serif;
-  --font-serif: "Nonoto Sans italic", serif;
-
-  /* Breackpoint */
+@media (min-width: 769px) {
+  body {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
 }

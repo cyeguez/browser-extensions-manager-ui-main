@@ -1,0 +1,81 @@
+@import "./_typography.css";
+
+:root {
+  /* Color Palette */
+  --color-Neutral-90: hsl(227, 75%, 14%);
+  --color-Neutral-80: hsl(226, 25%, 17%);
+  --color-Neutral-70: hsl(225, 23%, 24%);
+  --color-Neutral-60: hsl(226, 11%, 37%);
+  --color-Neutral-20: hsl(217, 61%, 90%);
+  --color-Neutral-10: hsl(0, 0%, 93%);
+  --color-Neutral-0: hsl(200, 60%, 99%);
+
+  --color-Red-400: hsl(3, 86%, 64%);
+  --color-Red-500: hsl(3, 71%, 56%);
+  --color-Red-700: hsl(3, 77%, 44%);
+
+  /* Semantic Colors - Light Theme (Default) */
+  --color-bg-primary: var(--color-Neutral-20);
+  --color-bg-secondary: var(--color-Neutral-0);
+  --color-text-primary: var(--color-Neutral-90);
+  --color-text-secondary: var(--color-Neutral-60);
+  --color-header-bg: var(--color-Neutral-0);
+  --color-header-text: var(--color-Neutral-90);
+  --color-button-bg: var(--color-Neutral-20);
+  --color-button-text: var(--color-Neutral-90);
+  --color-logo: var(--color-Neutral-90);
+  --color-switch-bg: var(--color-Neutral-10);
+
+  /* Fonts */
+  --font-primary: "Noto Sans", sans-serif;
+}
+
+/* Dark Theme */
+.dark {
+  --color-bg-primary: var(--color-Neutral-90);
+  --color-bg-secondary: var(--color-Neutral-80);
+  --color-text-primary: var(--color-Neutral-0);
+  --color-text-secondary: var(--color-Neutral-20);
+  --color-header-bg: var(--color-Neutral-80);
+  --color-header-text: var(--color-Neutral-0);
+  --color-button-bg: var(--color-Neutral-70);
+  --color-button-text: var(--color-Neutral-0);
+  --color-logo: var(--color-Neutral-0);
+  --color-switch-bg: var(--color-Neutral-70);
+}
+
+/* Logo color styles */
+.logo {
+  fill: var(--color-logo);
+}
+
+.dark .logo {
+  fill: var(--color-bg-primary);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Active button styles */
+.btn.active {
+  background-color: var(--color-Red-500);
+  color: var(--color-Neutral-0);
+  border-color: var(--color-Red-500);
+}
+
+.btn.active:hover {
+  background-color: var(--color-Red-700);
+  border-color: var(--color-Red-700);
+}
+
+.dark .btn.active {
+  background-color: var(--color-Red-400);
+  color: var(--color-Neutral-90);
+  border-color: var(--color-Red-400);
+}
+
+.dark .btn.active:hover {
+  background-color: var(--color-Red-500);
+  border-color: var(--color-Red-500);
+}
