@@ -41,16 +41,18 @@ main {
   .extensions-list__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: .75rem;
   }
 
   .extensions-list__item {
-    width: clamp(322px, 100%, 340px);
+    width: clamp(322px, 100%, 380px);
     background-color: var(--color-bg-secondary);
     border-radius: 0.625rem;
     padding: 1rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+
   }
 
   .extensions-list__item-image {
@@ -64,6 +66,7 @@ main {
     display: flex;
     gap: 1rem;
     height: 5.875rem;
+    
   }
 
   .extensions-list__item-details {
